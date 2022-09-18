@@ -7,6 +7,7 @@ export default function Footer() {
           href="https://github.com/manthanpatel12/"
           className="text-blue-500"
           target="_blank"
+          rel="noreferrer"
         >
           Manthan Patel
         </a>
@@ -16,6 +17,7 @@ export default function Footer() {
           href="https://github.com/manthanpatel12/nature/blob/main/credits"
           className="text-blue-500"
           target="_blank"
+          rel="noreferrer"
         >
           Credits
         </a>
