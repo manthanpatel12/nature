@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 export default function About({ img }) {
   return (
     <div id="about">
       <div className="grid md:grid-cols-2 items-center h-[90vh] p-8">
-        <div className="md:hidden">
-          <img
+        <div className="md:hidden h-full w-full">
+          <Image
             src={img.src}
-            alt="header image"
-            className="rounded-2xl shadow-2xl hover:scale-105 transition-transform"
+            width="500px"
+            height="300px"
+            layout="responsive"
+            className="rounded-2xl shadow-2xl hover:scale-105 hover:rounded-2xl transition-transform"
           />
         </div>
         <div className="px-9">
@@ -23,11 +27,13 @@ export default function About({ img }) {
             climate regulation.
           </p>
         </div>
-        <div className="hidden md:block ">
-          <img
+        <div className="hidden md:block h-full w-full">
+          <Image
             src={img.src}
-            alt="header image"
-            className="rounded-2xl shadow-2xl hover:scale-105 transition-transform"
+            height="300px"
+            width="500px"
+            layout="responsive"
+            className="rounded-2xl shadow-2xl hover:scale-105 hover:rounded-2xl transition-transform"
           />
         </div>
       </div>

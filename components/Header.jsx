@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 export default function Header({ img }) {
   return (
     <div className="grid md:grid-cols-2 items-center h-[90vh] p-8">
       <div>
-        <img
+        <Image
           src={img.src}
           alt="header image"
+          height="300px"
+          width="500px"
+          layout="responsive"
           className="rounded-2xl shadow-2xl hover:scale-105 transition-transform"
         />
       </div>
