@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, set, ref } from "firebase/database";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_apiKey,
@@ -13,6 +14,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 export function writeData(name, email, phone, comment) {
   const db = getDatabase(app);
